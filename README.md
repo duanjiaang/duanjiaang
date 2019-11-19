@@ -1,2 +1,0 @@
-# duanjiaang
-Just another repository
