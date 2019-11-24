@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
   <title>个人简介</title>
+  <script type="text/javascript">
+    window.onload = function () {
+      setInterval(function () {
+        document.getElementById("timer").innerHTML = (new Date()).toLocaleTimeString();
+      }, 1000);
+    };
+  </script>
   <link rel="stylesheet" href="demowhite.css">
   <style>
     .fs01 {
@@ -44,8 +52,11 @@
   </header>
   <span class="fs02">
     <span style="color: rgb(243, 167, 4);">
-      <h2 class="tc">昂哥的个人简介</h2>
+      <div class="tc fs03">昂哥的个人简介</div>
     </span>
+    <section style="text-align: right; color: chocolate;">
+      <span id="timer" class="fs01"></span>
+    </section>
   </span>
 
   <hr>
