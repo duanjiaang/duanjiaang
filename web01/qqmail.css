@@ -1,0 +1,53 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.dibu {
+  text-align: center;
+  background-color:#eff4fa;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+.info {
+  color: #b6b6b6;
+}
+
+a {
+  text-decoration: none;
+  color: #1d5494;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+/* 
+    头部样式设置，头部的两个区块要左右分散
+    */
+header {
+  /* 左右布局 */
+  display: flex;
+  justify-content: space-between;
+  /* 背景颜色 */
+  background-color: #eff4fa;
+  /* 下边框 */
+  border-bottom: 1px solid #d6dfea;
+  /* 内边距 */
+  padding: 1rem 2rem;
+  /* align-items表示压力布局中的子元素的垂直对齐方式，center是居中 */
+  align-items: center;
+  color: #b6b6b6;
+  /* 字体大小 */
+  font-size: 0.7em;
+}
+
+/* 固定位置定位 */
+footer {
+  /* 固定在最下方 */
+  position: fixed;
+  bottom: 0px;
+  /* fiexd定位会丢失宽度 */
+  width: 100%;
+}
