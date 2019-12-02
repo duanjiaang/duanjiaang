@@ -20,8 +20,8 @@ a {
 }
 
 a:hover {
- text-decoration: underline;
-}
+  text-decoration: underline;
+ }
 
 /* 
     头部样式设置，头部的两个区块要左右分散
@@ -50,4 +50,17 @@ footer {
   bottom: 0px;
   /* fiexd定位会丢失宽度 */
   width: 100%;
+}
+
+
+/* 中间区域是左右两块，都是整体居中 */
+main{
+
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+}
+/* 中间区域左边模块样式 */
+.main-left{
+  margin-right: 4rem;
 }
