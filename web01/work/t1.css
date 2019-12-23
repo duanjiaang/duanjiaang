@@ -73,7 +73,7 @@ justify-content: space-evenly;
   width: 40%;
 }
 
-.w33 {
+.w33 {  
   width: 33.3333333%;
 }
 
@@ -89,7 +89,7 @@ justify-content: space-evenly;
 }
 
 .flex-vbox01>div {
-  flex: 1;
+flex: 1;  
 }
 
 .h1 {
@@ -102,12 +102,7 @@ justify-content: space-evenly;
 
 .flex-vbox02 {
   display: flex;
-  align-items: flex-end;
-}
-
-.flex-vbox02 {
-  display: flex;
-  align-items: flex-end;
+  align-items:flex-end;
 }
 
 .myflex {
