@@ -1,0 +1,57 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+}
+
+.bg01 {
+  background: #ff0000;
+}
+
+.bg02 {
+  background: #acac00;
+}
+
+.bg03 {
+  background: #00acac;
+}
+
+.bg04 {
+  background: #ac00ac;
+}
+
+.mybox {
+  /* 盒模型的外边距 */
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 4rem;
+  /* 盒模型的内边距 */
+  padding: 1rem 2rem 3rem 4rem;
+  /* 盒模型的边框 */
+  border: 3px solid #000000;
+}
+
+/* 绝对和相对定位（慎用）！！！ */
+.rbox {
+  /* 
+  相对定位容器，可以控制里面的绝对定位元素
+  的坐标是相对于定位容器的 
+  */
+  position: relative;
+}
+
+/* 相对带绝对定位 */
+.abox {
+  /* 
+  绝对定位，可以指定在容器内的位置
+  会产生元素叠加效果
+   */
+  position: absolute;
+  /* right: 50%; */
+  right: 0px;
+  /* top: 0px; */
+  top: 75%;
+  border-radius: 50%;
+
+}
