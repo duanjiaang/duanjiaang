@@ -1,12 +1,18 @@
 body {
   background-image: url('https://www.bing.com/th/id/OGC.c5012e8f438b77c18e9bdcfc5fbce55f?pid=1.7&rurl=http%3a%2f%2fwww.diyifanwen.com%2ffiles%2fsucai%2fshoujitupian%2f2008-7%2f13%2f0871302305033962.gif&ehk=Ah3eMtSvVnVghDHVsRiTAG51Z4Djwp3GrlnmEbv95iA%3d');
   height: 1000px;
-  color: #ffffff;
+  color: #e62c2c;
+}
+
+ta {
+  background-image: url('https://img2.woyaogexing.com/2019/12/20/59d93bf2925a4409afd73591e2abb9ed!360x640.jpeg');
+  width: 444px;
+  height: 1000px;
 }
 
 a {
-text-decoration: none;
-color: rgb(163, 160, 160);
+  text-decoration: none;
+  color: rgb(163, 160, 160);
 }
 
 a:hover {
@@ -34,7 +40,7 @@ header {
 }
 
 header>div>div>div:first-child {
-margin-left: 2rem;
+  margin-left: 2rem;
   font-size: 1.5rem;
 }
 
