@@ -39,7 +39,7 @@
   <!-- 一个完全没有任何效果的非块级元素 span -->
   span前面-<span>默认没有任何效果</span>-span后面
   <!-- 没有任何效果的块级元素 div 但是块级元素*默认宽度*是*容器的宽度* -->
-  <div>也没有任何效果</div>
+  <div style="background: yellow;">也没有任何效果</div>
   div后面的元素会另起一行
   <!-- html5*新定义的块级元素*，和div*一摸一样*，只是<带了语义> -->
   <header>header只是语义是头部，并不会有实际效果</header>
@@ -77,36 +77,60 @@
 </body>
 
 </html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-  .mycolor{
-    background: blue;
-    color: white;
-  }
+.mc{
+  background: blueviolet;
+  color: salmon;
+ 
+}
+.mg {
+  background-image: url('7.jpg');
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
 
-  .mybg{
-    background-image: url('7.jpg');
-    color: black;
-  }
   </style>
 </head>
 <body>
-  <header style="text-align: right;">
-  <a href="index.html">返回首页</a>
-  </header>
-<div class="mycolor">
-  设置颜色！
-</div>
+  <span>11</span>22
+<div>111</div>22
+<section>11</section>22
+<header>111</header>22
+<main>11</main>22
+<footer>11</footer>22
+<nav>11</nav>22
+<menu>1111</menu>22
+<br>
+<span style="color:#000000 ;">1</span>
+<span style="color:#ffffff ;">2</span>
+<span style="color:#ff00ff ;">3</span>
+<span style="color:#00ff00 ;">4</span>
+<span style="color:#0000ff ;">5</span>
+<span style="color:#ffff00 ;">6</span>
 
-<div class="mybg">
+
+<section class="mc">
+设置颜色！
+</section>
+<section class="mg">
   设置背景！
-</div>
+</section>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
