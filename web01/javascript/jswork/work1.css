@@ -9,7 +9,9 @@
 /* 选择器1,选择器2 表示两个选择器同时生效 */
 #sp01,
 #sp02,
-#sp03 {
+#sp03,
+#sp04,
+#sp05 {
   display: inline-block;
   border: 1px solid #ff00ff;
   padding: 0.2rem;

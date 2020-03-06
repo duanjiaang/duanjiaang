@@ -22,8 +22,13 @@ document.getElementById('spTime').innerHTML =
 
 //反复间隔时间执行代码
 //第一个参数是要执行的代码，第二个参数是间隔的毫秒值,1000就是一秒
+
+// setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
+
+// setInterval() 方法会不停地调用函数，直到 clearInterval() 被调用或窗口被关闭。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。
+
 setInterval(function() {
-  //console.log(new Date());
+  // console.log(new Date());
   now = new Date();
   hour = now.getHours();
   minute = now.getMinutes();
