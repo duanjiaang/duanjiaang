@@ -21,6 +21,6 @@ document.getElementById('spEvent').addEventListener('click', function() {
 
 document.getElementById('btnClick').addEventListener('click', function() {
   // document.write('按钮点击后输出的内容。。。');
-  document.getElementById('spClick').innerHTML 
-    = '按钮点击后输出到span'+new Date();
+  document.getElementById('spClick').innerHTML =
+    '按钮点击后输出到span' + new Date();
 });

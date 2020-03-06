@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>后台登陆</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    header {
+      display: flex;
+      background-color: #ac0000;
+      color: #ffffff;
+      justify-content: space-between;
+      border-bottom: 1px solid #000000;
+    }
+
+    header>div {
+      padding: 0.5rem;
+    }
+
+    footer {
+      display: flex;
+      width: 100%;
+      background-color: #ac0000;
+      color: #ffffff;
+      position: fixed;
+      bottom: 0px;
+      border-top: 1px solid #000000;
+    }
+
+    footer>div {
+      padding: 1rem;
+    }
+
+    footer>div:nth-child(2) {
+      flex: 1;
+      text-align: center;
+    }
+
+    main {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main>section {
+      border: 1px solid #000000;
+      border-radius: 1rem;
+    }
+
+    main>section>div:first-child {
+      padding: 0.5rem;
+      border-bottom: 1px solid #000000;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #ac0000;
+      color: #ffffff;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+
+    main>section>div:last-child {
+      display: flex;
+      padding: 0.5rem;
+      border-top: 1px solid #000000;
+      justify-content: space-around;
+    }
+
+    main>section>div:last-child>div {
+      background-color: #ac0000;
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 8px 20px;
+      margin: 8px;
+      cursor: pointer;
+    }
+
+    main>section>div:nth-child(2) {
+      padding: 1rem;
+    }
+
+    .myinput {
+      padding: 4px;
+      border: 1px solid #acacac;
+      margin: 1rem;
+      border-radius: 4px;
+    }
+
+    .myinput>input {
+      border-width: 0px;
+      outline: none;
+    }
+
+    .myinput:focus-within {
+      border-color: #ac0000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div>XXX科技有限公司</div>
+    <div>
+      菜单
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div>管理员登陆</div>
+      <div>
+        <div class="myinput">
+          <input type="text" placeholder="请输入登陆名称">
+        </div>
+
+        <div class="myinput">
+          <input type="password" placeholder="请输入登陆密码">
+        </div>
+      </div>
+      <div>
+        <div>登陆</div>
+        <div>重填</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      网站开发日期
+    </div>
+    <div>
+      &copy;版权所有：考生姓名
+    </div>
+    <div>
+      联系电话：17788889999
+    </div>
+  </footer>
+
+</body>
+
+</html>

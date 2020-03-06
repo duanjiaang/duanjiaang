@@ -1,0 +1,21 @@
+body {
+  color: #ffffff;
+  background-color: #ffee58;
+}
+
+.sun span {
+  color: #ffffff;
+  background-color: #ffee58;
+  border: 1px solid #80deea;
+}
+
+.moon {
+  color: #000000;
+  background-color: #1b5e20;
+}
+
+.moon span {
+  color: #000000;
+  background-color: #1b5e20;
+  border: 1px solid #b71c1c;
+}
