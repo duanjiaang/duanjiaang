@@ -33,3 +33,7 @@
 .myani {
   animation: myani 2s;
 }
+
+@keyframes myani01 {
+  
+}
