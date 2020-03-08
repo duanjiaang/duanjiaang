@@ -1,0 +1,160 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #097ed1;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+header>div {
+  padding: 20px 15px 15px 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.yb {
+  margin-top: 59px;
+  background-color: #097ed1;
+  padding: 2px 0px 12px 15px;
+  color: #ffffff;
+  display: flex;
+}
+
+.pic-yuanjiao {
+  border: 3px solid #69bcf8;
+  border-radius: 5px;
+}
+
+.name {
+  font-size: 1.2rem;
+  padding-bottom: 12px;
+}
+
+.hao {
+  background-color: #2f92d8;
+  color: #d4d1d1;
+  font-size: 0.85rem;
+  border: 1px solid #d4d1d1;
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+
+.sx {
+  padding: 0px 10px;
+}
+
+.zy {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fu1 {
+  padding-top: 10px;
+  font-size: 2rem;
+  font-weight: 100;
+  padding-right: 10px;
+}
+
+.fu2 {
+  font-size: 1.2rem;
+  color: #9e9e9e;
+}
+
+section i {
+  font-size: 35px;
+
+}
+
+section {
+  display: flex;
+}
+
+.tb {
+  padding: 5px;
+}
+
+.border {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #d4d1d1;
+}
+
+.wuborder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.kongge1 {
+  background-color: #f0f0f0;
+  height: 10px;
+}
+
+.kongge2 {
+  background-color: #f0f0f0;
+  height: 75px;
+}
+
+.c1 {
+  color: #097ed1;
+}
+
+.c2 {
+  color: #f7963b;
+}
+
+.c3 {
+  color: #c44d16;
+}
+
+.c4 {
+  color: #036e1e;
+}
+
+footer>div {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #dcdcdc;
+  padding: 0.5rem 0px;
+}
+
+footer .iconfont {
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+footer {
+  position: fixed;
+  font-size: 0.9rem;
+  width: 100%;
+  bottom: 0px;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.bu1 {
+  font-size: 0.95rem;
+  padding-right: 5px;
+}
+
+.bu2 {
+  font-size: 0.95rem;
+  color: #036e1e;
+  padding-right: 5px;
+}
+
+.bu3 {
+  font-size: 0.95rem;
+  padding-right: 5px;
+}
+
+.active-icon {
+  color: #097ed1;
+}
