@@ -1,5 +1,5 @@
 /* #id 表示id对应的元素的样式*/
-#ani-div {
+#anidiv {
   width: 200px;
   height: 200px;
   background-color: #ff0000;
@@ -32,8 +32,4 @@
 
 .myani {
   animation: myani 2s;
-}
-
-@keyframes myani01 {
-  
 }
