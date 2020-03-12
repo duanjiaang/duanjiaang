@@ -20,8 +20,8 @@
 .abs02 {
   border: 1px solid #0000ff;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 6px;
+  left: 6px;
 }
 
 /* 绝对定位的叠加效果 */
