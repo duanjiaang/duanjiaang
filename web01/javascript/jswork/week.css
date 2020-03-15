@@ -1,0 +1,89 @@
+#btn {
+  border: 1px solid #ff0000;
+  border-radius: 50%;
+  background-image: url('week.jpg');
+  height: 66px;
+  width: 66px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#btn:focus {
+  border-color: #ff0000;
+  box-shadow: 0px 0px 10px #ff0000;
+  outline: none;
+}
+
+header>div:nth-child(1) {
+  font-size: 2.5rem;
+}
+
+.sun {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.moon {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#divhms {
+  font-size: 1.92rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#stnInfo {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 666;
+}
+
+main {
+  height: 60vh;
+}
+
+#main {
+  position: fixed;
+  top: 6.66rem;
+  margin: 5rem 0rem;
+  padding: 0rem 15rem;
+}
+
+footer {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#tb01>i {
+  color: #ff0000;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+#qiang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+#tb02>i {
+  color: #0000ff;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+#ruo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
