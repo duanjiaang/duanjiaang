@@ -1,0 +1,85 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.img01 {
+  width: 42px;
+  border-radius: 4px;
+}
+
+.ya01 {
+  display: flex;
+  justify-content: center;
+}
+
+.ya02 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mag01 {
+  font-size: 0.72rem;
+  margin: 10px;
+}
+
+header {
+  top: 0px;
+  position: relative;
+  color: #ffffff;
+  background-image: url('week01.jpg');
+  background-size: cover;
+  height: 13.6rem;
+}
+
+header>section:nth-child(1) {
+  font-size: 1.15rem;
+  margin: 0px 1rem;
+  padding-top: 1.6rem;
+}
+
+header>section:nth-child(2) {
+  position: absolute;
+  right: 1rem;
+  bottom: -6.6%;
+}
+
+.img02 {
+  width: 18px;
+  border-radius: 50%;
+  padding: 0px 0.5rem;
+}
+
+.border-top {
+  width: 91%;
+  border-top: 1px solid #eeeeee;
+  top: -52%;
+  position: absolute;
+  margin-left: 1rem;
+}
+
+.border-bottom {
+  width: 91%;
+  border-bottom: 1px solid #eeeeee;
+  bottom: -42%;
+  position: absolute;
+  margin-left: 1rem;
+}
+
+main {
+  position: relative;
+}
+
+main>section {
+  margin: 2.6rem 1.2rem;
+}
+
+.mag02 {
+  padding-left: 0.56rem;
+  font-size: 0.75rem;
+  font-weight: 550;
+}
+
+.i01 {
+  color: #eeeeee;
+}
