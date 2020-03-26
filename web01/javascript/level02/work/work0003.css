@@ -1,0 +1,88 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url('lol.jpg');
+  background-size: cover;
+}
+
+h1 {
+  font-size: 2.1rem;
+  color: #ffffff;
+}
+
+.border {
+  border-top: 1.5px solid #bdbdbd;
+  width: 21rem;
+  margin: 0px 2.7rem;
+}
+
+body>section:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  color: #ffffff;
+  padding: 0.8rem;
+  width: 28rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+  border-color: #00bcff;
+  box-shadow: 0px 0px 10px #00bcff;
+}
+
+.fs01 {
+  font-size: 0.8rem;
+  color: transparent;
+  font-weight: bold;
+}
+
+.fs02 {
+  font-size: 0.8rem;
+  color: #e53935;
+  font-weight: bold;
+}
+
+.error {
+  border-color: #ff0000;
+  box-shadow: 0px 0px 10px #ff0000;
+}
+
+.error:focus {
+  border-color: #b71c1c;
+  box-shadow: 0px 0px 10px #ff0000;
+}
+
+body>section:nth-child(3)>section>div {
+  position: relative;
+  margin: 0.8rem;
+}
+
+body>section:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 3rem;
+}
+
+#spIf {
+  position: absolute;
+  bottom: -2.1rem;
+  background-color: #00bcff;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  width: 26rem;
+  padding: 0.55rem;
+}
+
+#stnInfo{
+  font-size: 3rem;
+  text-align: center;
+  color: #b71c1c;
+}

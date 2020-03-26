@@ -1,0 +1,30 @@
+.form-input {
+  border: 1px solid #bcbcbc;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.form-input input {
+  /* 两种办法都可以消掉轮廓 */
+  /* border-width: 0px; ====>输入框宽度设为零*/
+  /* border-color: transparent; transparent透明的  ====>输入框颜色设为透明色 */
+  border-color: transparent;
+  outline: none;
+}
+
+/* :focus 元素自己带有焦点 */
+/* :focus-within表示里面有元素是带焦点的 */
+.form-input:focus-within {
+  border-color: #00bcff;
+}
+
+/* .a.b 多个类选择器中间没有空格，表示同时套用了两个类的元素 */
+/* .error.form-input表示class="form-input error..." */
+.form-input.error {
+  border-color: #ff0000;
+}
+
+/* class="form-input error"且有焦点:focus-within */
+.form-input.error:focus-within {
+  border-color: #ff0000;
+}
