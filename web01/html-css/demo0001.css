@@ -1,10 +1,24 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 .div01 {
-  height: 2rem;
-  /* 渐变色 */
+  height: 20rem;
+  /* 线性渐变  渐变色*/
   background: linear-gradient(90deg,
       rgba(255, 0, 0, 0.6) 20%,
       #0000ff 80%,
       #ffffff);
+}
+
+.box {
+  height: 10rem;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 255, .6) 50%, transparent 50%),
+    linear-gradient(rgba(0, 0, 255, .6) 50%, transparent 50%), white;
+  background-size: 50px 50px;
+
 }
 
 .div02 {
@@ -26,7 +40,7 @@
 
 .transform03 {
   /* 移动位置 */
-  transform: translate(110px, -50px);
+  transform: translate(120px, -50px);
 }
 
 .transform04 {
