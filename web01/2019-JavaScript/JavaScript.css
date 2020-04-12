@@ -1,9 +1,10 @@
 body {
   padding: 0px;
   margin: 0px;
-  background-image: url('../../images/1.jpg');
+  background-image: url('../images/2.jpg');
   background-size: cover;
   background-attachment: fixed;
+
 }
 
 section {
