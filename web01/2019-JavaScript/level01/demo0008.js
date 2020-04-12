@@ -11,18 +11,16 @@ var img01 = document.getElementById('img01');
 var img02 = document.getElementById('img02');
 
 // 点击支持按钮的动作
-btnJoin.addEventListener('click', function() {
+btnJoin.addEventListener('click', function () {
   djcs = djcs + 1;
   img01.setAttribute('class', 'animated shake');
-  setTimeout(function() {
+  setTimeout(function () {
     img01.setAttribute('class', '');
   }, 1000);
   console.log('点击次数：', djcs);
 });
 
-
-
-setInterval(function() {
+setInterval(function () {
   // 人气值自动根据人数上涨
   rqz = rqz + djcs * 3100;
   sprq.innerHTML = rqz;
@@ -39,15 +37,17 @@ setInterval(function() {
   }
   if (rqz > 40000) {
     sprq.style.color = '#bb0000';
+    img02.setAttribute('src', '../images/img0003.jpg');
+    img02.setAttribute('class', 'animated bounce');
   }
   if (rqz > 80000) {
     sprq.style.color = '#ff0000';
   }
 
   if (rqz > 100000) {
-    img01.setAttribute('src', 'images/img0006.jpg');
+    img01.setAttribute('src', '../images/img0006.jpg');
     img01.setAttribute('class', 'animated jackInTheBox');
-    img02.setAttribute('src', 'images/img0004.jpg');
+    img02.setAttribute('src', '../images/img0004.jpg');
     img02.setAttribute('class', 'animated flash');
   }
 }, 1000);
@@ -59,4 +59,4 @@ setInterval(function() {
 // setInterval，隔一段时间就会执行代码，无限循环
 // setTimeout，隔一段时间就会执行代码，只会一次
 // Date对象，获取时间信息
-// if +-*/% < > == 
+// if +-*/% < > ==
