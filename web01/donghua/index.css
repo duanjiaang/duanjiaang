@@ -1,0 +1,57 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-image: url('../images/14.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#spInfo {
+  font-size: 2.5rem;
+  color: #ff0000;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+section>div {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.c01 {
+  color: #d50000;
+}
+
+.c02 {
+  color: #00ff00;
+}
+
+.c03 {
+  color: #aa00ff;
+}
+
+.c04 {
+  color: #6200ea;
+}
+
+.c05 {
+  color: #ff6d00;
+}
+
+.c06 {
+  color: #2962ff;
+}
+
+.c07 {
+  color: #aeea00;
+}
+
+.c08 {
+  color: #00b8d4;
+}
+
+.c09 {
+  color: #000000;
+}

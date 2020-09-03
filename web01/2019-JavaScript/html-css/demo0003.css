@@ -2,9 +2,14 @@ body {
   margin: 0px;
 }
 
-/* 响应式布局 */
+/* 
+响应式布局 用于将网页改造成手机和电脑自适应
+布局之后想要做到自适应就不能对布局的div设其他的样式，可以里面再套一层div设样式是完美的
+ e.g.设置了这些(边框border，padding，margin) 会影响宽度
+ */
 .block01 {
   display: flex;
+  /* flex-wrap: wrap;  */
   /* 允许超过总宽度就换行 */
   flex-wrap: wrap;
 }
@@ -13,11 +18,13 @@ body {
   width: 25%;
 }
 
-/* 1366 媒体查询 */
+/* 1366 以前旧屏幕的分辨率 判断大于1366的就是一行有四个  */
+/* 媒体查询@media =====>判断屏幕的大小来切换不同的样式*/
 /* 当屏幕宽度小于768px的时候套用样式 */
+/* screen 屏幕 */
 @media screen and (max-width: 767px) {
-
-  /* 手机屏判断 */
+/* 直读就是 当你的屏幕最大宽度不超过767px（手机屏的最大设备宽度 而非手机的视网膜宽度<可以缩放>）的时候 */
+  /* 手机判断 */
   .block01>div {
     width: 100%;
   }
@@ -25,6 +32,7 @@ body {
 
 /* 768px-991px */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  /* 平板判断 */
   .block01>div {
     width: 50%;
   }
@@ -32,12 +40,14 @@ body {
 
 /* 992px-1199px */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* 电脑桌面判断 */
   .block01>div {
     width: 33.33333%;
   }
 }
 
-/* 手机桌面css切换 */
+/* 手机桌面css切换======================================================================================================== */
+
 .desktop {
   /* 桌面版本样式 */
   display: flex;
