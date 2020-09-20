@@ -1,0 +1,1 @@
+console.log('in js06.js...')

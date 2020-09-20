@@ -12,7 +12,7 @@ var divResult = document.getElementById('divResult'); //显示结果的div
 console.log(info01, info02, btnIf, divResult);
 
 // 第二步，判断按钮点击动作
-btnIf.addEventListener('click', function() {
+btnIf.addEventListener('click', function () {
   console.log('开始做判断');
   //获取输入框中输入的内容
   var val01 = info01.value; //第一个值
@@ -22,6 +22,7 @@ btnIf.addEventListener('click', function() {
 
   divResult.innerHTML = '第一个值是：' + val01 + '<br>';
   divResult.innerHTML = divResult.innerHTML + '第二个值是：' + val02 + '<br>';
+  // divResult.innerHTML += '第二个值是：' + val02 + '<br>';
   // 要有输入才能继续判断
   // 去掉空白字符在判断输入的情况 /\s*/g表示任意的空白字符
   val01 = val01.replace(/\s*/g, '');
@@ -32,7 +33,7 @@ btnIf.addEventListener('click', function() {
   if (val01.length == 0) {
     // 没有第一个值输入就中断执行并显示错误提示
     divResult.innerHTML =
-      divResult.innerHTML + '第一个信息没有输入有效内容<br>'; 
+      divResult.innerHTML + '第一个信息没有输入有效内容<br>';
     // 页面元素.****focus()表示元素获取焦点****
     info01.focus();
     return;

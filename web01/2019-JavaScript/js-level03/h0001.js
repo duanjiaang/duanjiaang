@@ -1,10 +1,10 @@
 console.log('进入h0001.js');
 // 循环基础（重复执行代码）
-// for(变量初始化;循环是否继续的逻辑判断表达式;每次循环完成之后要执行的代码)
+// for(变量初始化;循环是否继续的逻辑判断表达式;每次循环完成之后要执行的代码,i++ ==> i=i+1)
 // 三段代码都可以省略，可能造成死循环
 // 变量初始化只会在循环开始之前执行一次，逻辑判断是每次循环都会执行的
 var i;
-for (i = 0; i < 10; i++) {
+for (i = 0; i <= 9; i++) {
   console.log('循环执行：', i);
 }
 console.log(i);
@@ -36,17 +36,6 @@ for (i = 1990; i <= year; i++) {
   op.setAttribute('value', i + '年');
   console.log(op);
   //添加到selyear
-  selyear.append(op);
-}
-
-// 月日选项动态产生==============================================
-var selmonth = document.getElementById('selmonth');
-var selyear = document.getElementById('selyear');
-var year = new Date().getFullYear();
-for (i = 1970; i < year; i++) {
-  var op = document.createElement('option');
-  op.append(i + '年');
-  op.setAttribute('value', i + '年');
   selyear.append(op);
 }
 
