@@ -1,8 +1,8 @@
-// console.log('在浏览器的console中输出信息')
-// console.error('在浏览器的console中输出红色错误信息')
-// console.info(输出重要的信息)
+// console.log('在浏览器的console中输出信息');
+// console.error('在浏览器的console中输出红色错误信息');
+// console.info(输出重要的信息);
 console.log('in js01.js....');
-// console.error('输出错误用的')
+// console.error('输出错误用的');
 // 获取页面元素
 // document.getElementById('页面元素的id');
 // 表示获取页面中属性id="txt01"的元素，id必须唯一
@@ -23,6 +23,7 @@ btn01.addEventListener('click', function () {
   // 直接修改元素里面的内容(不常用)
   div01.innerHTML = vtxt01;
 });
+
 // dom创建元素
 let div02 = document.getElementById('div02');
 console.log(div02);
@@ -35,6 +36,7 @@ console.log('dom动态创建的元素：', einput);
 // 将动态创建的元素添加到页面指定的元素中
 // 元素.append(添加的元素)表示将添加的元素放到元素中
 div02.append(einput);
+// 对元素的属性做修改
 let einput02 = document.createElement('input');
 einput02.setAttribute('type', 'checkbox');
 einput02.setAttribute('checked', 'checked');
@@ -44,7 +46,6 @@ div02.append(einput02);
 let elabel = document.createElement('label');
 div02.append(elabel);
 elabel.append('男生');
-
 // 第二级input radio
 let elabel03 = document.createElement('input');
 elabel03.setAttribute('type', 'radio');

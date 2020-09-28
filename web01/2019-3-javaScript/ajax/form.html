@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单提交</title>
+</head>
+
+<body>
+  <!-- 原始表单提交 -->
+  <!-- 
+    action表示提交数据的服务器地址，一般是后端服务地址
+    method表示提交数据的方式，一般就是POST和GET
+    表单提交的效果有点像a超链接跳转，都会跳转到新页面
+   -->
+  <form action="https://huhuiyu.cn/teach-ajax-demo/" method="POST">
+    <input type="text" name="echo">
+    <!-- 表单特有的按钮，触发提交数据的动作 -->
+    <input type="submit" value="提交">
+  </form>
+  <hr>
+
+  <!-- 
+    https://huhuiyu.cn/teach-ajax-demo/
+    https://huhuiyu.cn/teach-ajax-demo/test/imageCode?echo=1&test.abc=2
+  
+    post提交是将表单中的数据用内容体传递到服务器地址
+    不会显示在地址栏，可以传递大量的数据或者是文件这种复杂的数据
+    get提交会将表单中的数据用地址栏信息传递到服务器
+    也就是会在地址栏暴露传递的数据，且有长度限制
+    不能提交复杂的数据，而且会对中文或者符号这样的数据转码
+    一般来说都会使用POST方式提交，只有极少数据的时候才会get
+    无论是哪一种方式，表单数据都会编码成下面的格式
+    表单元素name值=表单元素的输入值&表单元素1=表单元素值1...
+    所以表单元素提交必须带有name属性！！！
+  -->
+  <form method="GET" action="https://huhuiyu.cn/teach-ajax-demo/test/imageCode">
+    <!-- 下面的表单元素都是无效的，只是为了演示get和post差异 -->
+    <input type="text" name="echo">
+    <input type="text" name="test.abc">
+    <input type="submit">
+  </form>
+
+  <!-- 隐藏方式提交表单 -->
+  <form id="myform" style="display: none;" action="https://huhuiyu.cn/teach-ajax-demo/" method="POST">
+    <input id="myecho" type="text" name="echo">
+  </form>
+
+  <button id="btnForm">提交隐藏的表单</button>
+
+  <script>
+    let myform = document.getElementById('myform');
+    let myecho = document.getElementById('myecho');
+    let btnForm = document.getElementById('btnForm');
+
+    btnForm.addEventListener('click', function () {
+      // 修改表单数据
+      myecho.value = Math.random();
+      // 触发表单提交动作，submit方法是表单（form）对象特有的
+      myform.submit();
+    });
+
+  </script>
+  <!-- <img src="data:image/jpg;base64,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" alt=""> -->
+</body>
+
+</html>
