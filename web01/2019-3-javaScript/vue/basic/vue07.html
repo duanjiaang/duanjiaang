@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue基本指令四</title>
+  <link rel="stylesheet" href="css/vue07.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="list">
+      <!-- 
+        v-for="变量名 in vue的数据变量（数组）"
+        循环指令，表示循环获取数组中的值到变量名
+        下面的指令等同于
+        for (let i = 0; i < list.length; i++) {
+          let d = list[i];
+        }
+        v-for指令所在的元素去会做循环创建！！！！
+       -->
+      <div v-for='d in list'>
+        <div>{{d.id}}</div>
+        <div>{{d.name}} ({{d.sex=='m'?'男':'女'}})</div>
+        <div>
+          <!-- 
+            需要传参的事件
+            就必须添加括号和对应的参数值
+           -->
+          <span @click="showInfo(d)">循环的事件</span>
+        </div>
+        <!-- <div>{{d}}</div> -->
+      </div>
+
+      <ul>
+        <!-- v-for获取数据所在索引 -->
+        <li v-for='(ab,index) in list'>
+          {{index}}:{{ab.name}}
+        </li>
+      </ul>
+    </div>
+    <div>
+      点击值：
+      {{clickData}}
+    </div>
+  </div>
+
+
+
+  <script src="js/vue.min.js"></script>
+  <script src="js/vue07.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue对照版本</title>
+</head>
+
+<body>
+  <!-- 
+    vue需要和页面元素绑定，用于确定vue的作用范围
+    所以需要一个带id的元素
+   -->
+  <div id="app">
+    <!-- 
+      v-model="vue中data小节定义的值" 
+      必须是表单元素
+      用于将表单元素的value和js中的变量双向绑定
+    -->
+    <input type="text" v-model="username">
+    <!-- @事件类型="methods小节中的function" -->
+    <button @click="showName">确定</button>
+    <div>
+      <!-- {{data小节的值}} -->
+      {{username}}
+    </div>
+  </div>
+
+  <script src="js/vue.min.js"></script>
+
+  <script src="js/vue01.js"></script>
+</body>
+
+</html>

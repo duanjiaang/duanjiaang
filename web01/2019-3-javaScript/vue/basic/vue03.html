@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue数据表格，对照组</title>
+</head>
+<body>
+  <div id="app">
+    <table border="1">
+    <thead>
+      <tr>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>性别</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="data in list">
+        <td>{{data.id}}</td>
+        <td>{{data.name}}</td>
+        <!-- 值可以使用运算表达式 -->
+        <td>{{data.sex=='m'?'男':'女'}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <script src="js/vue.min.js"></script>
+  <script src="js/vue03.js"></script>
+</body>
+</html>

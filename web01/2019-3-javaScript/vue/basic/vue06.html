@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue基本指令三</title>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <input type="text" v-model="user.name">
+      <input type="password" v-model="user.pwd">
+      <button @click="login">登录</button>
+    </div>
+    <div>{{user}}--{{error}}</div>
+    <!-- 
+      v-if="逻辑表达式"
+      逻辑表达式为true，指令所在元素会添加到页面中
+      逻辑表达式为false，指令所在元素会从页面中删除
+      和v-show的区别，
+      v-show是控制元素显示效果
+      v-if是控制元素是否存在
+     -->
+    <div v-if="error=='name'">用户名必须填写</div>
+    <div v-if="error=='pwd'">密码必须填写</div>
+    <div v-if="error=='check'">用户名或者密码错误，登陆失败</div>
+  </div>
+
+
+  <script src="js/vue.min.js"></script>
+  <script src="js/vue06.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue课程一</title>
+</head>
+
+<body>
+  <!-- 
+    和vue实例绑定的元素，可以使用vue实例的功能
+   -->
+  <div id="app">
+    <h1>
+      <!-- 通过{{data中定义的key显示数据}} -->
+      {{welcome}}
+      <!-- 
+        v-text指令（html虚拟属性） 
+        作用是将data中对应的数据放到元素的里面
+      -->
+      <span v-text="info"></span>
+    </h1>
+    <div>
+      <!-- 
+        v-model表示和data中变量双向绑定
+        一般是和表单元素关联
+        页面输入的值变化会同步给data中的变量
+        data中的变量变化也会同步给页面元素
+        vue是mvvm框架
+        model-view view-model
+        表示数据模型到视图，视图到数据模型的意思
+       -->
+      <input type="text" v-model="user.name" placeholder="用户名">
+      <input type="password" v-model="user.password" placeholder="密码">
+      <!-- 
+        @事件名称="methods里面的function名"
+        将事件和对应的function关联
+        事件就是
+        addEventListener方法
+        事件名称其实就是该方法的第一个值
+        function就是第二个值
+       -->
+      <button @click="ok">确定</button>
+      <button @click="reset">重置</button>
+    </div>
+    <div>
+      {{user}}
+    </div>
+    <div>
+      {{htmlinfo}}
+    </div>
+    <div v-text="htmlinfo"></div>
+    <!-- v-html中的html内容会生效！非常危险 -->
+    <div v-html="htmlinfo"></div>
+
+  </div>
+
+  <script src="js/vue.min.js"></script>
+  <script src="js/vue02.js"></script>
+</body>
+
+</html>

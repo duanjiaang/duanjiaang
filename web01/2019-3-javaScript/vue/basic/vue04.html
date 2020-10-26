@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue基本指令</title>
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- 
+      事件处理如果是简单的单行代码
+      可以直接写在指令值里面
+      不过不建议这样，最好还是委托给funtion
+     -->
+    <div>
+      <button @click="showdiv=!showdiv">切换显示</button>
+      <button @click="showdiv=true">显示第一块</button>
+      <button @click="showdiv=false">显示第二块</button>
+    </div>
+    <!-- 
+        v-show="逻辑表达式"
+        逻辑表达式为true，指令所在元素显示出来
+        逻辑表达式为false，指令所在元素不显示
+     -->
+    <div v-show="showdiv">第一块</div>
+    <div v-show="!showdiv">第二块</div>
+    <div>{{showdiv}}</div>
+    <hr>
+    <!-- 
+      注意逻辑表达式是两个等于号
+      赋值时一个等于号
+     -->
+    <div>
+      <button>第一块</button>
+      <button>第二块</button>
+      <button>第三块</button>
+    </div>
+    <div v-show="showindex==1">嘻嘻嘻嘻嘻</div>
+    <div v-show="showindex==2">哈哈哈哈哈</div>
+    <div v-show="showindex==3">嘿嘿嘿嘿嘿</div>
+    <div>{{showindex}}</div>
+
+    <!-- 
+      v-bind:属性名称="vue中的data数据"
+      表示将属性和对应的data数据绑定
+      可以简写为：属性名称
+      v-on:事件可以简写成@事件
+     -->
+    <p v-bind:title="titleInfo">哈哈哈哈哈，嘻嘻嘻嘻嘻</p>
+    <button :disabled="btnDistable">按钮状态</button>
+    <button v-on:click="btnDistable=!btnDistable">切换按钮状态</button>
+  </div>
+
+
+  <script src="js/vue.min.js"></script>
+  <script src="js/vue04.js"></script>
+</body>
+
+</html>
