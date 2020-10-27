@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue控制样式</title>
+  <link rel="stylesheet" href="css/vue08.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>{{title}}</h1>
+    <span :class="class1">最简单的动态注入属性</span>
+    <span @click="class1=''">动态注入的修改</span>
+    <hr>
+    <label>
+      <input type="checkbox" v-model="styleEnable">控制样式
+    </label>
+    <!-- 
+      由于class属性的特殊性，vue对class的注入做了特殊扩展
+      :class="{要注入的样式名称:样式是否注入的逻辑值}"
+      class属性和:class动态注入的属性可以同时出现
+      vue会自动判断结果并合并成一个
+     -->
+    <span class="style2" :class="{style1:styleEnable}">
+      通过表达式控制样式
+    </span>
+    {{styleEnable}}
+    <!-- 多个表达式 -->
+    <label>
+      <button @click="changeStyle">切换主题</button>
+      <div :class="{'style-03':style3,'style-04':style4}">哈哈哈哈哈哈哈哈哈哈哈哈</div>
+    </label>
+    {{style3}}-{{style4}}
+    <!-- 数组表单上，可以判断和放置多个不同样式 -->
+    <div class="style2" :class="styleEnable?'style-03':'style-04'">
+      数组格式计算样式
+    </div>
+  </div>
+
+  <script src="js/vue.min.js"></script>
+  <script src="js/vue08.js"></script>
+</body>
+
+</html>

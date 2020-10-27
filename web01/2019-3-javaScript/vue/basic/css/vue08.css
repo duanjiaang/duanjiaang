@@ -1,0 +1,20 @@
+.style1 {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.style2 {
+  display: inline-block;
+  border: 1px solid #ff0000;
+  padding: 2px;
+}
+
+.style-03 {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+
+.style-04 {
+  background-color: #ff0000;
+  color: #ffffff;
+}

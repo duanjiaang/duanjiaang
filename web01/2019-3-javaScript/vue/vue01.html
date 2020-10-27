@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=div, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    {{welcome}}
+  </div>
+
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.common.js"></script>
+
+  <script>
+    let app = new Vue({
+      el: '#app',
+      data: {
+        welcome: 'hello vue!'
+      }
+
+    });
+  </script>
+</body>
+
+</html>

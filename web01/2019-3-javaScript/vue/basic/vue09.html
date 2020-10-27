@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue计算属性和监听</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>{{title}}</h1>
+    <div>
+      <input type="text" v-model="numa">
+      +
+      <input type="text" v-model="numb">
+      =
+      <!-- 计算值看起来和data中的数据一样，直接绑定页面 -->
+      <span>{{add}}</span>
+      ----
+      {{numa}}/{{numb}}/{{numa+numb}}
+      <hr>
+      <input type="text" v-model="message">
+      <br>{{message}}<br>{{reverse}}
+    </div>
+    <div>
+      <input type="text" v-model="xing">
+      <input type="text" v-model="ming">
+      <hr>
+      {{xing}}/{{ming}}/{{xm}}
+    </div>
+  </div>
+  <script src="js/vue.min.js"></script>
+  <script src="js/vue09.js"></script>
+</body>
+
+</html>
