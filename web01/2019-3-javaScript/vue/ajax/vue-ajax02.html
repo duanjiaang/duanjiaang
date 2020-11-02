@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue和ajax数据联动</title>
+</head>
+
+<body>
+  <div id="app">
+    <div>{{title}}</div>
+    省份：
+    <!-- 省份值变化，调用城市查询 -->
+    <select v-model="province.pid" @change="queryCity">
+      <option v-for="p in provinceList" :value="p.pid">{{p.province}}</option>
+    </select>
+    城市:
+    <select v-model="city.cid">
+      <option v-for="c in cityList" :value="c.cid">{{c.city}}</option>
+    </select>
+    <!-- 表格方式联动 -->
+    <table>
+      <thead>
+        <tr>
+          <th>编号</th>
+          <th>城市</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="c in cityList">
+          <td>{{c.cid}}</td>
+          <td>{{c.city}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div>
+      <!-- {{provinceList}}
+      <br> -->
+      <!-- {{cityList}}
+      <br> -->
+      {{province}}
+      <br>
+      {{city}}
+      <br>
+      <pre>
+        {{result}}
+      </pre>
+    </div>
+  </div>
+
+  <script src="lib/qs.min.js"></script>
+  <script src="lib/axios.min.js"></script>
+  <script src="lib/vue.min.js"></script>
+  <script src="js/tools.js"></script>
+
+  <script src="js/vue-ajax02.js"></script>
+
+</body>
+
+</html>
