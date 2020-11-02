@@ -11,14 +11,22 @@
 <body>
   <div id="app">
     <div class="h1 text-center text-danger">{{title}}</div>
+    <!-- vue配合bootstrap样式 -->
+    <div class="form-group" :class="{'has-success':success}">
 
-    <div class="form-group">
-
-      <div class="input-group" 
-        :class="[error.name?'has-error':'']">
+      <div class="input-group" :class="[error.name?'has-error':'']">
         <span class="input-group-addon">姓名</span>
-        <input type="text" class="form-control" 
-        v-model="user.name">
+        <input type="text" class="form-control" v-model="user.name">
+      </div>
+      <div v-if="error.name" class="text-danger">
+        用户名必须填写
+      </div>
+      <div class="input-group" :class="[error.pwd?'has-error':'']">
+        <span class="input-group-addon">密码</span>
+        <input type="password" class="form-control" v-model="user.pwd">
+      </div>
+      <div v-if="error.pwd" class="text-danger">
+        密码必须填写
       </div>
 
       <div class="text-center">
@@ -29,6 +37,25 @@
         {{user}}-{{error}}
       </div>
     </div>
+
+    <!-- vue表格 -->
+    <table class="table table-bordered">
+      <thead>
+        <tr class="bg-primary">
+          <th>编号</th>
+          <th>姓名</th>
+          <th>性别</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(d,index) in list" 
+          :class="[index%2==0?'info':'success']">
+          <td>{{d.id}}--{{index}}--{{index%2}}--{{index%2==0}}</td>
+          <td>{{d.name}}</td>
+          <td>{{d.sex=='m'?'男':'女'}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <script src="js/vue.min.js"></script>
