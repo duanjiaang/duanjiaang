@@ -31,4 +31,20 @@
   - 执行`cd 项目名称`进入创建的项目目录
   - 执行`npm run serve`启动vue项目
   - 启动完成后，控制台会提示项目的网络地址，一般就是`http://localhost:8080/`
-  
+- vuecli创建项目文件和目录说明
+  - `public`目录里面是原始文件，出index.html以外不会被
+vuecli编译处理
+  - `src`目录是vue源码目录，里面的文件会被vuecli编译处理
+    - `assets`目录是放置非源码的文件，比如图片，视频等
+    - `components`目录是放置公用组件
+    - `views`目录是视频（页面）文件
+    - `App.vue`是顶级视图文件，一般就只有路由视图
+    - `main.js`是入口js
+  - `.browserslistrc`是browsers启用配置
+  - `.eslintrc.js`重要！！！代码检测工具配置，需要和格式化工具配置配合
+  - `.gitignore`是git忽略文件列表配置
+  - `.prettierrc.js`是prettier格式化配置，和eslint要一致
+  - `bable.config.js`bable是js编译工具，转换新版本js到浏览器支持的旧版本
+  - `package-lock。json`,确保npm安装的模块版本一致，自动生成的
+  - `package.json`,项目依赖的npm安装模块配置文件
+  - `vue.config.js`vuecli配置文件
