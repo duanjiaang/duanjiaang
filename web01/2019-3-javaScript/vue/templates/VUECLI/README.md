@@ -11,5 +11,8 @@
   - 修改复制后的文件夹名称为项目名称
   - 修改`package.json`中的项目名称和版本号
   - 修改`package-lock.json`中的项目名称和版本号
-  - 执行上面说明的项目初始化过程
+  - 执行上面说明的项目初始化过程npm
   
+  - 第三方js导入（npm方式）
+  - `npm install --save qs`
+  - `npm install --save axios`

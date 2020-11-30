@@ -7,18 +7,21 @@
   -->
   <div class="main-container">
     <div>
+      <!-- 具体内容是路由地址对应的vue视图界面 -->
       <router-view></router-view>
     </div>
   </div>
 </template>
 
 <style>
+@import 'css/iconfont/iconfont.css';
+
 /* 样式写在style小节里面 */
 body {
   margin: 0px;
 }
 .main-container {
-  background-image: url('assets/bg.jpg');
+  background-image: url('assets/bg01.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

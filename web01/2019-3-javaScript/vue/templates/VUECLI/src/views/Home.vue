@@ -7,9 +7,21 @@
     <a href="/#/bssic/v01">基础复习一</a>
     |
     <a href="/#/bssic/v02">基础复习二</a>
-
+    <br />
+    <!-- 通过数据生成菜单 -->
+    <div>
+      <!-- vuecli中会检测v-for循环是否配备不可重复的标识属性key -->
+      <a v-for="m in menus" :key="m.link" :href="m.link">
+        {{ m.text }}
+      </a>
+    </div>
+    <!-- 路由api方式跳转页面 -->
+    <div>
+      <span v-for="m in routerMenus" :key="m.path" @click="toPage(m.path)">
+        {{ m.text }}
+      </span>
+    </div>
   </div>
-  
 </template>
 
 <script>
@@ -21,12 +33,33 @@ export default {
   // vue项目中的data必须是函数
   // data变成function，返回值就是以前的data格式json数据
   data() {
-    return { welcome: '欢迎使用vue脚手架路由项目' };
+    return {
+      welcome: '欢迎使用vue脚手架路由项目',
+      // 用json数据完成菜单的配置
+      menus: [
+        { link: '/#/bssic/v01', text: 'vue复习知识一' },
+        { link: '/#/bssic/v02', text: 'vue复习知识二' }
+      ],
+      // 路由模式菜单
+      routerMenus: [
+        { link: '/bssic/v01', text: 'vue复习知识一' },
+        { link: '/bssic/v02', text: 'vue复习知识二' }
+      ]
+    };
   },
   methods: {
     // 所有的function字段都可以简写掉function
     test() {
       window.open('https://huhuiyu.top');
+    },
+    // 路由跳转页面事件处理
+    toPage(path) {
+      // $router是vue实例内置对象
+      // 用于路由的控制
+      // push方法是路由跳转
+      // 单一字符串参数表示要跳转的路由的路径
+      // 合法值都是在router中配置的path
+      this.$router.push(path);
     }
   }
 };
@@ -41,5 +74,18 @@ export default {
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+.menus > span {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #ff0000;
+}
+
+.menus > span:hover {
+  border-color: transparent;
+  color: #ff0000;
+  cursor: pointer;
 }
 </style>
