@@ -17,3 +17,12 @@
     - 创建[处理错误用视图文件夹](src/views/error/)
     - 创建[路由不存在（404错误）视图](src/views/error/Error404.vue)
     - 创建[处理错误用路由配置文件](src/router/error.js)
+
+- 项目使用方法
+  - 确保`node_modules`文件夹已经删除
+  - 复制本文件夹到新位置
+  - 更改复制的文件夹为新的项目名称
+  - 修改`package.json`中的`name`字段为新项目名称
+  - 执行`npm install`初始化项目
+  - 修改`public/index.html`里面的title为项目相关信息
+  - 修改README.md为项目自己的说明信息
